@@ -14,7 +14,7 @@ jobs:
           python-version: 3.7
       - name: Install pipenv
         run: pip install pipenv
-      - name: Run Dependencies
+      - name: Install Dependencies
         run: |
           pipenv install 
           pipenv install --dev
