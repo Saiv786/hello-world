@@ -18,7 +18,7 @@ jobs:
         run: |
           pipenv install 
           pipenv install --dev
-      - name: Open Pipenv shell
-        run: pipenv shell
+      # - name: Open Pipenv shell
+      #   run: pipenv shell
       - name: Run Tests
-        run: pytest
+        run: pipenv run pytest
